@@ -1,31 +1,39 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+      <header class="navbar">
+          <section class="navbar-section">
+              <a class="navbar-brand mr-2">Spectre.css</a>
+              <a class="btn btn-link">Users</a>
+          </section>
+      </header>
+      <div class="container grid-lg">
+          <div class="columns">
+
+
+              <router-view></router-view>
+
+
+          </div>
+      </div>
   </div>
 </template>
 
+
+<script>
+
+    export default {
+        name: 'App',
+        data() {
+            return {
+
+            }
+        }
+    }
+
+</script>
+
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+    @import "~spectre.css";
+    /*@import "~spectre-icons.css";*/
 </style>
