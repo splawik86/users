@@ -15,6 +15,7 @@ export default [
     {
         path: "/user/:id",
         name: "user",
+        props: true,
         component: UserDetails
     }
 ]

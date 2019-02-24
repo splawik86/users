@@ -10,7 +10,7 @@
         </tr>
         </thead>
         <tbody>
-            <User v-for="(user, index) in users" :user="user" :key="user.id"/>
+            <User v-for="user in users" :user="user" :key="user.id"/>
         </tbody>
     </table>
 </template>
